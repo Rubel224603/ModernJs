@@ -52,7 +52,7 @@ console.log(ch);
 
     console.log("The New Array = "+ JSON.stringify(numberArray));
     numberArray.find(function (ele){   // if condition match then not check....
-        if(ele>10  ){
+        if(ele > 10  ){
            console.log("Find item = " + ele);
            return true;
         }
@@ -60,7 +60,7 @@ console.log(ch);
 
 
     numberArray.filter(function(ele){
-        if(ele>100){
+        if(ele > 100){
             console.log("Filter item = "+ ele);
             return true;
         }

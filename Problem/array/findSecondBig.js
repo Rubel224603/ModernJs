@@ -3,7 +3,7 @@
 
 const input = [50,120,233,400,3,4,5,6,20,26 ,77];
 
-function findLarge(){
+function findSecondLarge(){
     let large = input[0];
     let secondLarge  = input[1];
     let temp;
@@ -35,4 +35,4 @@ function findLarge(){
     console.log("Final  Large =:" + large);
     console.log("Final Second Large =:" + secondLarge);
 }
-findLarge();
+findSecondLarge();
