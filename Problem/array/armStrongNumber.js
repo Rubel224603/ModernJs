@@ -15,6 +15,7 @@ function checkAramStrong(){
         //console.log(output);
     }
     console.log("After Proceesing:=",output);
+    
     if(input === output){
       console.log("The AramStrong Number =",true);
 
