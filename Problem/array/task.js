@@ -35,11 +35,12 @@ const employees = [
   { id: 6, name: "Fiona", departmentId: 4, salary: 6000 },
   { id: 7, name: "George", departmentId: 3, salary: 5200 },
   { id: 8, name: "Helen", departmentId: 4, salary: 7200 },
-  { id: 9, name: "Ian", departmentId: 2, salary: 4800 },
+  { id: 9, name: "Ian", departmentId: 3, salary: 4800 },
   { id: 10, name: "Jane", departmentId: 1, salary: 5100 },
 ];
 
 const departments = [
+  { id: 0, name: "Executive" },
   { id: 1, name: "HR" },
   { id: 2, name: "Engineering" },
   { id: 3, name: "Marketing" },
@@ -55,15 +56,20 @@ console.log("Employees Length: ", employeLength);
 
 
 function getEngineers(){
+
     for(let i= 0;i<departmentLength;i++){
         //console.log(departments[i]);
-        if(departments[i].id === departments[1].id){
+        if(departments[i].name === "Engineering"){
+            console.log("Department Name: = ",  departments[i].name);
             console.log("Department Id: = ", departments[i].id);
-            let engineeringId = departments[i].id;
-            console.log("Department Name: = ", departments[i].name);
-            for(let j= 0; j<employeLength;j++){
+            const engineeringId = departments[i].id;
+         
+
+            for(let j = 0; j<employeLength; j++){
+
                if(employees[j].departmentId === engineeringId){
-                console.log(employees[j].name);
+                 console.log(employees[j].name);
+
                };
             }
         }
