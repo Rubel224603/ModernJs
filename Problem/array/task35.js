@@ -20,10 +20,21 @@ const departments = [
 ];
 
 
+for(let i = 0;i<employees.length;i++){
+    const emp = employees[i];
 
+    const dep = departments.find(d=>d.id === emp.departmentId)
+    // console.log(dep);
+    // console.log("emp",emp);
 
-for (let i = 0; i < employees.length; i++) {
-  const emp = employees[i];
-  const dept = departments.find((d) => d.id === emp.departmentId);
-  console.log(emp.name + "  " + dept.name);
+   // console.log(emp.name, dep.name);
 }
+
+// i= 0 ; 
+    //emp  = employees[0] => { id: 1, name: "Alice", departmentId: 1, salary: 5000 }, Now access 
+    //dep = departments.find => d.id=1 =>dep.id (every elements check if find not check next)
+    //
+//
+//
+//
+//
