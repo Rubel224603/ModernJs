@@ -27,7 +27,7 @@ for(let i = 0;i<employees.length;i++){
     // console.log(dep);
     // console.log("emp",emp);
 
-   // console.log(emp.name, dep.name);
+    console.log(emp.name, dep.name);
 }
 
 // i= 0 ; 
