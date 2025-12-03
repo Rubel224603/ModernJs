@@ -46,3 +46,4 @@
     }
     // checkDepartments();
     console.log(checkDepartments());
+    
