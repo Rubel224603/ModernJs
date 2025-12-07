@@ -14,6 +14,25 @@ let employees = [
   { id: 10, name: "Jane", departmentId: 1, salary: 5100 },
 ];
 
-employees.push(10) ;
-employees.unshift(122);
+employees.push({
+  id:12,
+  name:"Danial",
+  departmentId:3,
+  salary: 5000
+
+}) ;
+employees.unshift({
+  id:11,
+  name:"Alex",
+  departmentId: 2,
+  salary: 50000
+});
+console.log(employees);
+
+ //T-006: Remove an element from the front and the end of an array.
+
+ //remove first item....
+ employees.shift();
+ //remove last item...
+employees.pop();
 console.log(employees);
