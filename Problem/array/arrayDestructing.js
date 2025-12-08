@@ -17,3 +17,17 @@ let admin ="admin";
  [admin,gest] = [gest,admin];
 console.log(admin);
 
+ //T-008: Take out the last 8 food items from the above array using the Array destructuring. 
+ // Hint: rest parameter.
+ const length  = foods.length;
+ console.log(length);
+ const [fristIndex, secondIndex, ...lastEightindex]= foods;
+ console.log(lastEightindex);
+
+ //Clone an Array(Shallow cloning)
+
+ const numbers = [1,2,3,4,{x:10}];
+ const clone = [...numbers];
+ numbers[4].x = 400;
+    console.log(numbers[4].x);
+    console.log(clone[4].x);
